@@ -1,0 +1,29 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+    <div>
+        <table >
+            <tr><td>
+        <asp:Image AlternateText ="banner" runat ="server" ImageUrl ="~/images/banner.jpg" Width="1038px" />
+                </td></tr>
+            <tr><td>
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                </td></tr>
+            </table>
+    </div>
+    </form>
+</body>
+</html>
